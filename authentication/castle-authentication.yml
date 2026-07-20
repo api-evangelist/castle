@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.castle.io/docs/integration-guide + https://docs.castle.io/docs/enterprise-using-events-api
+docs: https://docs.castle.io/docs/integration-guide
+summary:
+  types:
+  - http
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: apiSecretBasic
+  type: http
+  scheme: basic
+  description: >-
+    Backend requests authenticate with HTTP Basic authentication. The API Secret
+    is supplied as the HTTP Basic password (username left empty), i.e.
+    `Authorization: Basic base64(":<API_SECRET>")`. The secret is configured
+    server-side via the CASTLE_API_SECRET environment variable in the official
+    SDKs. Client-side calls use a separate publishable App ID with the browser/
+    mobile SDK to generate a short-lived request token; the secret is never
+    exposed to the client.
+  sources:
+  - https://docs.castle.io/docs/integration-guide
+notes:
+- Base URL is https://api.castle.io.
+- The Events API (enterprise) uses the same HTTP Basic [example key] scheme.
+- No OAuth2 / OpenID Connect surface is documented; therefore no scopes/ artifact.
