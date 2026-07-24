@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.castle.io/docs/sdk-browser + https://docs.castle.io/docs/sdk-mobile
+description: >-
+  Client-side, embeddable SDK components that collect the device fingerprint and
+  generate the short-lived request token consumed by the backend Risk/Filter
+  APIs. Distinct from the server-side SDKs in packages/.
+families:
+- name: Browser SDK
+  description: JavaScript client-side SDK that fingerprints the browser and produces a request token via castle.createRequestToken().
+  loader: "@castleio/castle-js"
+  install: npm install @castleio/castle-js
+  docs: https://docs.castle.io/docs/sdk-browser
+- name: Mobile SDK (iOS)
+  description: Native iOS SDK for device fingerprinting and user-activity monitoring.
+  loader: Castle (CocoaPods / Swift Package)
+  docs: https://docs.castle.io/docs/sdk-mobile
+- name: Mobile SDK (Android)
+  description: Native Android SDK for device fingerprinting and user-activity monitoring.
+  loader: castle-android
+  docs: https://docs.castle.io/docs/sdk-mobile
+- name: React Native SDK
+  description: React Native wrapper over the native mobile SDKs.
+  loader: "@castleio/react-native-castle"
+  docs: https://docs.castle.io/docs/sdk-mobile

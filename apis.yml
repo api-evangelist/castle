@@ -1,8 +1,16 @@
 aid: castle
 name: Castle
-description: 'Castle is a company surfaced as a portfolio company of index-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Castle is a fraud and account-abuse prevention platform that stops bots,
+  credential stuffing, account takeover, and multi-accounting through
+  behavioral analysis and device fingerprinting — without CAPTCHAs or puzzles
+  for legitimate users. Developers integrate a client-side SDK (browser and
+  mobile) that generates a short-lived request token, then call Castle's
+  backend Risk API and Filter API to score authentication and transaction
+  events in real time. Castle returns machine-learning risk scores and signals
+  (bot, proxy/VPN, residential proxy, impossible travel, device reputation)
+  that drive a policy rules engine, Lists, and webhooks. It serves security and
+  trust-and-safety teams across gaming, fintech, marketplaces, and SaaS.
 url: https://raw.githubusercontent.com/api-evangelist/castle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +18,130 @@ x-backed-by:
 - index-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://castle.io/og.png
 tags:
 - Company
 - Security
-apis: []
+- Fraud Prevention
+- Bot Detection
+- Device Fingerprinting
+- Account Takeover
+- Risk Scoring
+- Identity
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- aid: castle:castle-api
+  name: Castle API
+  description: >-
+    Castle's REST API for real-time fraud and abuse detection. The Risk API
+    scores authenticated user events (login, transaction, profile update), the
+    Filter API scores anonymous/pre-authentication events (registration,
+    password reset), the Log API records events without scoring, and the
+    enterprise Events API queries and aggregates historical events. Device and
+    Lists endpoints manage device reputation and allow/deny lists.
+  humanURL: https://reference.castle.io
+  baseURL: https://api.castle.io
+  tags:
+  - Fraud Prevention
+  - Bot Detection
+  - Risk Scoring
+  properties:
+  - type: Documentation
+    url: https://docs.castle.io/
+  - type: APIReference
+    url: https://reference.castle.io
+  - type: GettingStarted
+    url: https://docs.castle.io/docs/integration-guide
+  - type: Authentication
+    url: authentication/castle-authentication.yml
+  - type: Webhooks
+    url: asyncapi/castle-webhooks.yml
 common:
+- type: TrustCenter
+  url: security/castle-trust-center.yml
+- type: DomainSecurity
+  url: security/castle-domain-security.yml
 - type: Website
-  url: http://castle.io
+  url: https://castle.io
+- type: DeveloperPortal
+  url: https://docs.castle.io/
+- type: Documentation
+  url: https://docs.castle.io/
+- type: APIReference
+  url: https://reference.castle.io
+- type: GettingStarted
+  url: https://docs.castle.io/docs/integration-guide
+- type: Support
+  url: https://castle.io/contact
+- type: Blog
+  url: https://blog.castle.io/
+- type: GitHubOrganization
+  url: https://github.com/castle
+- type: Pricing
+  url: https://castle.io/pricing
+- type: SignUp
+  url: https://dashboard.castle.io/signup/new
+- type: Login
+  url: https://dashboard.castle.io/login
+- type: TermsOfService
+  url: https://blog.castle.io/terms
+- type: PrivacyPolicy
+  url: https://blog.castle.io/privacy
+- type: StatusPage
+  url: https://status.castle.io
+- type: Compliance
+  url: security/castle-trust-center.yml
+- type: Packages
+  url: packages/castle-packages.yml
+- type: SDKs
+  url: packages/castle-packages.yml
+- type: LLMsTxt
+  url: llms/castle-llms.txt
+- type: Authentication
+  url: authentication/castle-authentication.yml
+- type: Conventions
+  url: conventions/castle-conventions.yml
+- type: Sandbox
+  url: sandbox/castle-sandbox.yml
+- type: Lifecycle
+  url: lifecycle/castle-lifecycle.yml
+- type: ChangeLog
+  url: changelog/castle-changelog.yml
+- type: Conformance
+  url: conformance/castle-conformance.yml
+- type: ErrorCatalog
+  url: errors/castle-problem-types.yml
+- type: DataModel
+  url: data-model/castle-data-model.yml
+- type: Components
+  url: components/castle-components.yml
+- type: MCPServer
+  url: mcp/castle-mcp.yml
+- type: Webhooks
+  url: asyncapi/castle-webhooks.yml
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

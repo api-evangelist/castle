@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: derived
+source: https://docs.castle.io/docs/integration-guide + documented HTTP semantics of https://api.castle.io
+format: json
+note: >-
+  Castle does not publish an application/problem+json (RFC 9457) error registry.
+  These are the HTTP-level error responses documented across the integration and
+  Events API guides plus standard REST semantics for the Basic-auth API.
+  Response bodies are JSON with a `type` and `message`.
+problems:
+- status: 400
+  title: Invalid request
+  detail: Malformed request body or missing required event fields.
+- status: 401
+  title: Unauthorized
+  detail: Missing or invalid API Secret (HTTP Basic credential).
+- status: 403
+  title: Forbidden
+  detail: The API Secret is not permitted to perform the requested action.
+- status: 404
+  title: Not found
+  detail: Referenced resource (device, list, user) does not exist.
+- status: 422
+  title: Unprocessable entity
+  detail: Request token expired or invalid, or event failed validation.
+- status: 429
+  title: Rate limit exceeded
+  detail: Plan request-per-second limit exceeded (e.g. 5 req/s on Pro).
+- status: 500
+  title: Internal server error
+  detail: Unexpected server-side error.

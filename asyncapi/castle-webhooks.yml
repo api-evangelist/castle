@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.castle.io/docs/webhooks
+spec_type: Webhooks
+description: >-
+  Castle delivers outbound webhooks for List and Policy events. No AsyncAPI
+  document is published; this is the captured webhook catalog.
+transport: HTTPS POST (JSON)
+signature:
+  header: X-Castle-Signature
+  algorithm: HMAC-SHA256
+  keyed_with: API Secret
+  computed_over: raw JSON request body
+payload_fields:
+- api_version
+- app_id
+- created_at
+- type
+- data
+events:
+- name: "$list_item.created"
+  description: A new item was added to a List.
+- name: "$list_item.archived"
+  description: An item in a List was archived and is no longer present.
+- name: "$list_item.unarchived"
+  description: A previously archived item was un-archived and is now present.
+- name: "$policy.matched"
+  description: The conditions of a policy matched.
+configuration: >-
+  Subscriptions are created in the Castle Dashboard on a Policy or List page via
+  the Integrations tab (Add Integration).

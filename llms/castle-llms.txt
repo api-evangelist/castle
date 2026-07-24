@@ -1,0 +1,52 @@
+# Castle Documentation
+
+> Stop bots and account abuse in minutes. Connect Castle to Cloudflare with no code, or use your own edge stack. Use the SDK to monitor users and stop fraud in-app. Enterprise security without the friction.
+
+## Guides
+- [Overview](https://docs.castle.io/docs/an-introduction-to-castle.md): Castle is a suite of APIs for bot detection and abuse prevention.
+- [Integrate Castle](https://docs.castle.io/docs/integration-guide.md): Add bot detection and fraud prevention to your app in 8 steps.
+- [Bot detection](https://docs.castle.io/docs/bot-detection.md)
+- [Device fingerprinting](https://docs.castle.io/docs/device-fingerprinting.md)
+- [Risk scoring](https://docs.castle.io/docs/risk-scoring.md): Machine learning-based risk scores designed to fraud and abuse
+- [Signals](https://docs.castle.io/docs/signals.md)
+- [Overview](https://docs.castle.io/docs/sdk-download.md)
+- [Browser SDK](https://docs.castle.io/docs/sdk-browser.md): This page describes how to install and use the JavaScript client-side SDK
+- [Mobile SDKs](https://docs.castle.io/docs/sdk-mobile.md): How to install, configure and use the Castle Mobile SDKs to perform device fingerprinting and monitor user activity.
+- [iOS SDK: Migrating from v3 to v4](https://docs.castle.io/docs/ios-sdk-migrating-from-v3-to-v4.md)
+- [Android SDK: Migrating from v3 to v4](https://docs.castle.io/docs/android-sdk-migrating-from-v3-to-v4.md)
+- [Cloudflare](https://docs.castle.io/docs/cloudflare.md)
+- [Webhooks](https://docs.castle.io/docs/webhooks.md): Subscribe to webhooks to automate fraud and security workflows
+- [Events API](https://docs.castle.io/docs/enterprise-using-events-api.md)
+- [Mock Request Tokens](https://docs.castle.io/docs/test-tokens.md)
+- [Overview](https://docs.castle.io/docs/overview-dashboard.md): Discover how Castle's Overview Dashboard provides a comprehensive snapshot of your app's security, helping you effortlessly monitor and enhance your defenses.
+- [Policies](https://docs.castle.io/docs/creating-a-policy.md): A flexible rules engine with triggers and actions
+- [Lists](https://docs.castle.io/docs/lists.md): Learn how to effectively create, manage, and utilize Lists in Castle to streamline fraud-related workflows and enhance security.
+- [Metrics](https://docs.castle.io/docs/metrics.md)
+- [Single sign-on](https://docs.castle.io/docs/single-sign-on.md)
+- [Connecting to Slack](https://docs.castle.io/docs/connect-to-slack.md): Learn how to seamlessly integrate Castle with Slack to receive real-time notifications, keeping your team informed and proactive with automated alerts and enhanced monitoring.
+- [Managing Team Members](https://docs.castle.io/docs/manage-team-members.md): Easily invite and manage users in your organization through Castle's dashboard
+- [Enabling Two-Factor Auth](https://docs.castle.io/docs/enabling-two-factor-auth.md)
+- [Enforcing Two-Factor Auth](https://docs.castle.io/docs/enforcing-two-factor-auth.md): As an admin, you can require all members of your Org to set up 2FA
+- [Block signups with spam emails](https://docs.castle.io/docs/block-signups-with-spam-emails.md)
+- [Detect account sharing](https://docs.castle.io/docs/tutorial-detect-account-sharing.md): Prevent revenue loss due to abusive sharing of a single account
+- [Challenge logins from new country or device](https://docs.castle.io/docs/tutorial-challenge-logins-from-new-country-or-device.md): Make sure your user accounts are as secure as possible.
+- [Using CAPTCHA with Castle](https://docs.castle.io/docs/using-captcha-with-castle.md)
+- [Review suspicious user behavior](https://docs.castle.io/docs/review-suspicious-user-behavior.md): Streamline user reviews and safeguard your platform with an automated system for flagging and assessing suspicious transactions, ensuring a balance between security and user experience.
+- [Handling Device Reporting with Lists](https://docs.castle.io/docs/reporting-devices-using-lists.md): Report and block suspicious devices to prevent them from accessing legitimate user accounts on your platform.
+- [Upgrade Legacy Webhooks to new Webhooks](https://docs.castle.io/docs/upgrade-legacy-webhooks-to-new-castle-webhooks.md): Seamlessly migrate to the latest Castle Webhooks by following this guide.
+- [Challenging users without CAPTCHAs](https://docs.castle.io/docs/challenging-users.md): How to minimize friction for legitimate users while slowing down bad actors
+- [Protecting the transaction](https://docs.castle.io/docs/transaction-activity.md)
+- [Protecting anonymous actions](https://docs.castle.io/docs/anonymous-activity.md)
+- [Sending account verification events](https://docs.castle.io/docs/sending-account-verification-events.md): Implement and track Castle challenge events to add verification steps and capture complete user journey insights.
+- [Overview](https://docs.castle.io/docs/signals-reference.md)
+- [API Custom Parameters](https://docs.castle.io/docs/api-custom-parameters.md): Adding custom data to Castle events
+
+## Pages
+- [Features](https://docs.castle.io/a-custom-page.md)
+
+## Changelog
+- [Detect VPN traffic with new IP intelligence](https://docs.castle.io/changelog/detect-vpn-traffic-with-new-ip-intelligence.md)
+- [Export team members to CSV](https://docs.castle.io/changelog/export-team-members-to-csv.md)
+- [New event field: `email.registered_domain`](https://docs.castle.io/changelog/new-event-field-emailregistered_domain.md)
+- [Detect residential proxies with new IP intelligence](https://docs.castle.io/changelog/detect-residential-proxies-with-new-ip-intelligence.md)
+- [Phone call detection](https://docs.castle.io/changelog/phone-call-detection.md)

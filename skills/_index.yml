@@ -1,0 +1,12 @@
+generated: '2026-07-18'
+method: generated
+source: Grounded in Castle's documented REST endpoints (https://docs.castle.io/docs/integration-guide); no OpenAPI operationIds are published, so operations are documented method+path.
+skills:
+- file: castle-protect-login.md
+  name: Protect a login with Castle Risk API
+  api: https://api.castle.io
+  operations: ["POST /v1/risk"]
+- file: castle-screen-registration.md
+  name: Screen a signup with Castle Filter API
+  api: https://api.castle.io
+  operations: ["POST /v1/filter"]

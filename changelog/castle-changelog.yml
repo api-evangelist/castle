@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.castle.io/changelog + https://docs.castle.io/llms.txt
+scheme: dated-entries
+current_version: v1
+docs: https://docs.castle.io/changelog
+note: >-
+  Recent-window capture from the published changelog index. Individual entry
+  pages do not expose machine-readable dates, so dates are left null rather than
+  guessed. The live changelog is the source of truth.
+entries:
+- title: Detect VPN traffic with new IP intelligence
+  date: null
+  url: https://docs.castle.io/changelog/detect-vpn-traffic-with-new-ip-intelligence
+  type: addition
+- title: Export team members to CSV
+  date: null
+  url: https://docs.castle.io/changelog/export-team-members-to-csv
+  type: addition
+- title: "New event field: email.registered_domain"
+  date: null
+  url: https://docs.castle.io/changelog/new-event-field-emailregistered_domain
+  type: addition
+- title: Detect residential proxies with new IP intelligence
+  date: null
+  url: https://docs.castle.io/changelog/detect-residential-proxies-with-new-ip-intelligence
+  type: addition
+- title: Phone call detection
+  date: null
+  url: https://docs.castle.io/changelog/phone-call-detection
+  type: addition

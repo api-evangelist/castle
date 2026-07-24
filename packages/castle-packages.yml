@@ -1,0 +1,85 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.castle.io/docs/sdk-download + https://github.com/castle + package registries
+packages:
+- language: ruby
+  registry: rubygems
+  name: castle
+  url: https://rubygems.org/gems/castle
+  install: gem install castle
+  source_code: https://github.com/castle/castle-ruby
+  official: true
+- language: javascript
+  registry: npm
+  name: "@castleio/sdk"
+  url: https://www.npmjs.com/package/@castleio/sdk
+  install: npm install @castleio/sdk
+  source_code: https://github.com/castle/castle-node
+  role: backend
+  official: true
+- language: javascript
+  registry: npm
+  name: "@castleio/castle-js"
+  url: https://www.npmjs.com/package/@castleio/castle-js
+  install: npm install @castleio/castle-js
+  role: browser
+  official: true
+- language: python
+  registry: pypi
+  name: castle
+  url: https://pypi.org/project/castle/
+  install: pip install castle
+  source_code: https://github.com/castle/castle-python
+  official: true
+- language: php
+  registry: packagist
+  name: castle/castle-php
+  url: https://packagist.org/packages/castle/castle-php
+  install: composer require castle/castle-php
+  source_code: https://github.com/castle/castle-php
+  official: true
+- language: java
+  registry: maven
+  name: io.castle:castle-java
+  url: https://central.sonatype.com/artifact/io.castle/castle-java
+  source_code: https://github.com/castle/castle-java
+  official: true
+- language: csharp
+  registry: nuget
+  name: castle-dotnet
+  url: https://github.com/castle/castle-dotnet
+  source_code: https://github.com/castle/castle-dotnet
+  official: true
+  note: Published SDK; canonical NuGet package id not confirmed from docs.
+- language: swift
+  registry: cocoapods
+  name: Castle
+  url: https://github.com/castle/castle-ios
+  source_code: https://github.com/castle/castle-ios
+  role: mobile-ios
+  official: true
+- language: kotlin
+  registry: maven
+  name: castle-android
+  url: https://github.com/castle/castle-android
+  source_code: https://github.com/castle/castle-android
+  role: mobile-android
+  official: true
+- language: javascript
+  registry: npm
+  name: "@castleio/react-native-castle"
+  url: https://github.com/castle/castle-react-native
+  source_code: https://github.com/castle/castle-react-native
+  role: mobile-react-native
+  official: true
+third_party:
+- language: php
+  framework: laravel
+  name: robrogers3/laracastle
+  url: https://github.com/robrogers3/laracastle
+  official: false
+- language: ruby
+  framework: devise
+  name: castle_devise
+  url: https://github.com/castle/castle_devise
+  official: true

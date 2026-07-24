@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.castle.io/docs/test-tokens
+description: >-
+  Castle publishes Mock Request Tokens for testing. They are only honored in
+  Sandbox environments and let you simulate device, location, policy action, and
+  risk-score outcomes without a real client-side SDK integration.
+environments:
+  separation: Sandbox vs Live (per-environment API keys/App IDs)
+  note: Test tokens are only supported on Sandbox environments.
+mock_request_token:
+  format: "test|<parameter>:<value>|<parameter>:<value>..."
+  parameters:
+  - name: device
+    values: [chrome_on_mac, safari_on_mac, firefox_on_mac, chrome_on_windows, firefox_on_windows, bot_on_linux]
+  - name: ip
+    values: [se, us-ca, jp]
+  - name: action
+    values: [allow, challenge, deny]
+  - name: risk
+    values: "value from 0-1.0"
+  examples:
+  - description: Chrome user on Mac in California
+    token: "test|device:chrome_on_mac|ip:us-ca"
+  - description: Bot from Japan
+    token: "test|device:bot_on_linux|ip:jp"

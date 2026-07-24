@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.castle.io + https://status.castle.io + https://castle.io/pricing
+versioning:
+  scheme: uri-path
+  current: v1
+  api_version_field: api_version (present on webhook/event payloads)
+  docs: https://reference.castle.io
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: >-
+    Castle documents SDK migration guides (iOS/Android v3->v4, legacy webhooks ->
+    new webhooks) but publishes no formal API deprecation/Sunset-header policy.
+sla:
+  url: https://castle.io/pricing
+  note: SLA guarantees offered on the Enterprise plan.
+status_page: https://status.castle.io
+deprecated_operations: []

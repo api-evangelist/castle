@@ -1,0 +1,54 @@
+generated: '2026-07-18'
+method: derived
+source: https://docs.castle.io/docs/signals-reference + https://docs.castle.io/docs/webhooks + https://docs.castle.io/docs/lists
+note: >-
+  Entity graph derived from the documented Castle object model (no machine-
+  readable OpenAPI published). Relationships reflect documented id references
+  between events, users, devices, lists, and policies.
+entities:
+- name: Event
+  description: A scored or logged activity (login, registration, transaction, ...) with a type and status.
+  key_fields: [type, status, request_token, user, context, properties]
+- name: User
+  description: The end user an authenticated event belongs to; scored by the Risk API.
+  key_fields: [id, email, registered_at, traits]
+- name: Device
+  description: A device fingerprint derived from the client-side request token.
+  key_fields: [token, type, os, browser, risk]
+- name: Signal
+  description: A discrete risk indicator returned on scoring (bot, proxy, vpn, residential_proxy, impossible_travel).
+  key_fields: [name, value]
+- name: List
+  description: An allow/deny/custom list of items used by the policy engine.
+  key_fields: [id, name, color]
+- name: ListItem
+  description: An entry in a List (e.g. an IP, device, or email).
+  key_fields: [id, list_id, primary_value, archived]
+- name: Policy
+  description: A rule in the rules engine with triggers and actions (allow/challenge/deny).
+  key_fields: [id, name, action, conditions]
+relationships:
+- from: Event
+  to: User
+  type: belongs_to
+  via: user
+- from: Event
+  to: Device
+  type: has_one
+  via: request_token
+- from: Event
+  to: Signal
+  type: has_many
+  via: signals
+- from: User
+  to: Device
+  type: has_many
+  via: devices
+- from: ListItem
+  to: List
+  type: belongs_to
+  via: list_id
+- from: Policy
+  to: List
+  type: has_many
+  via: conditions

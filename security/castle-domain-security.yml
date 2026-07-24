@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: castle.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 22 06:33:53 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: reference.castle.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 19 18:23:47 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: api.castle.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 24 23:59:59 2026 GMT
+  hsts: null
+domains:
+- domain: castle.io
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

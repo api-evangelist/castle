@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://castle.io/trust/ + https://docs.castle.io/docs/webhooks + https://docs.castle.io/docs/integration-guide
+standards:
+- id: soc2
+  conforms: true
+  evidence: SOC 2 listed on the Castle trust center (https://castle.io/trust/)
+- id: gdpr
+  conforms: true
+  evidence: GDPR compliance stated on the Castle trust center; GDPR data-deletion supported
+- id: oauth2
+  conforms: false
+  evidence: API uses HTTP Basic API-secret auth, not OAuth2
+- id: oidc
+  conforms: false
+- id: hmac-webhook-signing
+  conforms: true
+  evidence: Webhooks signed with HMAC-SHA256 via the X-Castle-Signature header
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Error responses are JSON but application/problem+json is not documented
+- id: rest-json
+  conforms: true
+  evidence: JSON request/response REST API over HTTPS at https://api.castle.io

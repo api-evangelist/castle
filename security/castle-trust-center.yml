@@ -1,0 +1,13 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://castle.io/trust/
+url: https://castle.io/trust/
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://castle.io/trust/
+  keywords:
+  - soc 2
+  - gdpr

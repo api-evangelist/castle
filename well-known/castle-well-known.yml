@@ -1,0 +1,17 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/ on api.castle.io and castle.io
+note: No /.well-known/ discovery documents were served (all 404). Recorded for auditability.
+hosts:
+- host: https://api.castle.io
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://castle.io
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
