@@ -2,29 +2,34 @@ generated: '2026-07-18'
 method: derived
 status: candidate
 source: https://docs.castle.io/docs/integration-guide + https://docs.castle.io/docs/enterprise-using-events-api
-note: >-
-  No official hosted/remote Castle MCP server was found (docs, npm
-  @modelcontextprotocol, MCP registries). This is a candidate tool list derived
-  from the documented REST endpoints, not a published server.
+note: No official hosted/remote Castle MCP server was found (docs, npm @modelcontextprotocol, MCP registries).
+  This is a candidate tool list derived from the documented REST endpoints, not a published server.
 server:
   name: castle
   transport: http
 tools:
 - name: score_authenticated_event
   description: Score an authenticated user event (login, transaction, profile update) with the Risk API.
-  source_operation: "POST https://api.castle.io/v1/risk"
+  source_operation: POST https://api.castle.io/v1/risk
 - name: score_anonymous_event
-  description: Score an anonymous / pre-authentication event (registration, password reset) with the Filter API.
-  source_operation: "POST https://api.castle.io/v1/filter"
+  description: Score an anonymous / pre-authentication event (registration, password reset) with the Filter
+    API.
+  source_operation: POST https://api.castle.io/v1/filter
 - name: log_event
   description: Record an event without risk scoring via the Log API.
-  source_operation: "POST https://api.castle.io/v1/log"
+  source_operation: POST https://api.castle.io/v1/log
 - name: query_events
   description: Query historical events (enterprise Events API).
-  source_operation: "POST https://api.castle.io/v1/events/query"
+  source_operation: POST https://api.castle.io/v1/events/query
 - name: group_events
   description: Aggregate/group historical events (enterprise Events API).
-  source_operation: "POST https://api.castle.io/v1/events/group"
+  source_operation: POST https://api.castle.io/v1/events/group
 - name: get_events_schema
   description: Retrieve the queryable event schema (enterprise Events API).
-  source_operation: "GET https://api.castle.io/v1/events/schema"
+  source_operation: GET https://api.castle.io/v1/events/schema
+deployment:
+  mode: none
+  verified: derived
+  tools: 6
+  checked: '2026-08-12'
+  source: catalog MCP census
