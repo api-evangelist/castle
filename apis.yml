@@ -45,7 +45,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 image: https://castle.io/og.png
 x-docs-platform: readme
 x-docs-platform-confidence: high
@@ -92,6 +92,8 @@ apis:
   - type: Webhooks
     url: asyncapi/castle-webhooks.yml
 common:
+- url: https://blog.castle.io/rss/
+  type: BlogRSS
 - type: TrustCenter
   url: security/castle-trust-center.yml
 - type: DomainSecurity
