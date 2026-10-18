@@ -15,3 +15,16 @@
   relationship: connector-coverage
   status: not-a-workflow
   arazzo: null
+- slug: castle-slack-own
+  label: Slack (own)
+  partner: slack
+  partner_name: Slack (own)
+  category: Slack app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://slack.com/marketplace/A05A21591R8-castle
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
