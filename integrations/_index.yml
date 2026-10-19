@@ -28,3 +28,114 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: castle-maven-central
+  label: Maven Central
+  partner: maven-central
+  partner_name: Maven Central
+  category: official SDK (Java/JVM)
+  type: register
+  channel: package-registry
+  evidence: https://central.sonatype.com/artifact/io.castle/castle-java
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Maven Central (public registry JSON)
+    spec_file: null
+    language: Java/JVM
+    packages:
+    - name: io.castle:castle-java
+      version: 3.0.0
+      released: '2026-09-08'
+      released_field: lastUpdated
+      lapsed: false
+      page: https://central.sonatype.com/artifact/io.castle/castle-java
+      repo_leg: github-org:castle
+      publisher_leg: groupId:castle.io
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
+- slug: castle-npm-registry
+  label: npm registry
+  partner: npm
+  partner_name: npm registry
+  category: official SDK (JavaScript/TypeScript)
+  type: register
+  channel: package-registry
+  evidence: https://www.npmjs.com/package/@castleio/castle-js
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@castleio/castle-js'
+      version: 2.8.5
+      released: '2026-06-25'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@castleio/castle-js
+      repo_leg: domain:castle.io
+      publisher_leg: email:castle.io
+      matched_by: domain
+    - name: '@castleio/react-native-castle'
+      version: 4.1.0
+      released: '2026-10-12'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@castleio/react-native-castle
+      repo_leg: github-org:castle
+      publisher_leg: email:castle.io
+      matched_by: domain
+    - name: '@castleio/sdk'
+      version: 3.2.0
+      released: '2026-09-08'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@castleio/sdk
+      repo_leg: github-org:castle
+      publisher_leg: email:castle.io
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
+- slug: castle-pypi
+  label: PyPI
+  partner: pypi
+  partner_name: PyPI
+  category: official SDK (Python)
+  type: register
+  channel: package-registry
+  evidence: https://pypi.org/project/castle/
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: PyPI (public registry JSON)
+    spec_file: null
+    language: Python
+    packages:
+    - name: castle
+      version: 7.3.0
+      released: '2026-09-08'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/castle/
+      repo_leg: github-org:castle
+      publisher_leg: email:castle.io
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
