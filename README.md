@@ -64,6 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Castle is a company surfaced as a portfolio company of index-ventures and added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment pipeline.
+Castle is a fraud and account-abuse prevention platform that stops bots, credential stuffing, account takeover, and multi-accounting through behavioral analysis and device fingerprinting — without CAPTCHAs or puzzles for legitimate users. Developers integrate a client-side SDK (browser and mobile) that generates a short-lived request token, then call Castle's backend Risk API and Filter API to score authentication and transaction events in real time. Castle returns machine-learning risk scores and signals (bot, proxy/VPN, residential proxy, impossible travel, device reputation) that drive a policy rules engine, Lists, and webhooks. It serves security and trust-and-safety teams across gaming, fintech, marketplaces, and SaaS.
 
-Backed by: index-ventures — http://castle.io
+**Areas:** Company · Security · Fraud Prevention · Bot Detection · Device Fingerprinting · Account Takeover · Risk Scoring · Identity
+
+## Castle on APIs.io
+
+Everything profiled for Castle is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/castle/](https://apis.io/providers/castle/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Castle API](https://apis.io/apis/castle/castle-api/) — Castle's REST API for real-time fraud and abuse detection. The Risk API scores authenticated user events (login, transaction, profile update), the Filter…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Castle Webhooks](https://apis.io/asyncapis/castle/castle-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [castle](https://apis.io/servers/castle/castle/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Castle Authentication](https://apis.io/security/castle/castle-authentication/)
+- [Castle Domain Security](https://apis.io/security/castle/castle-domain-security/)
+- [Castle Trust Center](https://apis.io/security/castle/castle-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://castle.io)
+- [Documentation](https://docs.castle.io/)
+- [Getting started](https://docs.castle.io/docs/integration-guide)
+- [API reference](https://reference.castle.io)
+- [Pricing](https://castle.io/pricing)
+- [Sign up](https://dashboard.castle.io/signup/new)
+- [Support](https://castle.io/contact)
+- [Blog](https://blog.castle.io/)
+- [Terms of service](https://blog.castle.io/terms)
+- [Privacy policy](https://blog.castle.io/privacy)
+- [GitHub](https://github.com/castle)
+- [Status](https://status.castle.io)
+
+## API Evangelist rating
+
+**Kin Score 43.8** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 57.7 |
+| Access clarity | 32.9 |
+
+**Agent readiness 21.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/castle/](https://apis.io/providers/castle/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Castle: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/castle/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
